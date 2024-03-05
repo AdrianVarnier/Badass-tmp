@@ -23,5 +23,6 @@ sudo add-apt-repository ppa:gns3/ppa
 sudo apt update -y                                
 sudo apt install gns3-gui gns3-server
 
-# Install Gnome-session-flashback
-sudo apt install gnome-session-flashback
+# Build Docker image
+docker build ./routeur -t avarnier_routeur
+docker build ./host -t avarnier_host
